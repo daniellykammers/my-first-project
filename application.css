@@ -1,0 +1,393 @@
+/* RESET ---------------- */
+
+*, *:before, *:after{margin: 0; padding: 0; box-sizing: border-box; -webkit-box-sizing: border-box;}
+
+
+body{
+      font-family: 'Josefin Sans', sans-serif;
+      font-size-adjust: auto;
+      line-height: inherit;
+      color: inherit;
+      }
+
+      .input, .select, .iframe, .button{
+        border: none; font-family: 'Josefin Sans', sans-serif;
+      }
+
+      .h1, .h2, .h3 {margin: 0; padding: 0}
+      .ul, .ul {list-style: none;}
+      a {text-decoration: none; color: inherit; list-style: none;}
+      img{max-width: 100%; border: none;}
+
+      .input, .select, .iframe, .button{
+      border: none; font-family: 'Josefin Sans', sans-serif;}
+
+      .secondpage {
+        background-image: url(images/bg-search.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        border: none;
+        padding: 100px 0;
+      }
+
+/* GERAIS --------------------------------- */
+  .section{
+    float: left;
+    width: 100%;
+  }
+
+  .section:not(:first-of-type){
+    margin-top: 60px;
+  }
+
+  .section-header{
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .section-header h1{
+    font-size: 38px;
+    font-weight: normal;
+  }
+
+  .row {
+    float: left;
+    width: 100%;
+  }
+
+/* HEADER --------------------------------- */
+  .header{
+  position: fixed;
+  width: 100%;
+  padding: 20px;
+  z-index: 6px;
+  background: rgb(255, 255, 255);
+  }
+
+  .header .logo img{
+    max-width: 200px;
+  }
+
+  .header .logo .img:hover{
+    transform: scale(1.1);
+  }
+
+  /* MENU --------------------------------- */
+  .nav{
+    float: left;
+    background-size: cover;
+    border-radius: 4px;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 3px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .menu li{
+    position: relative;
+    float: left;
+    border-right: 1px solid #c0c0c0;
+  }
+
+/* FRASE AND ESTATISTIC --------------------------------- */
+  .frase{
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+    background-image: url(images/bg-search.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border: none;
+  }
+
+    .frase h1{
+      font-size: 37px;
+      font-weight: bold;
+    }
+
+    .frase .tagline{
+        font-size: 26px;
+      }
+
+  /*DESTINOS-------------------------------------------*/
+    section .content{
+      margin: 25px;
+    }
+    
+    .destinos-col{
+      margin-bottom: 20px;
+    }
+
+  /*ESTATISTIC-------------------------------------------*/
+  .estatisticas{
+    background: #fff;
+    max-width: 960px;
+    width: 90%;
+    padding: 30px 0;
+    margin: -40px auto 0 auto;
+    text-align: center;
+
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0, .3);
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0, .3);
+  }
+
+    .estatisticas-item span{
+      font-size: 33px;
+      font-weight: bold;
+    }
+
+    .estatisticas-item p{
+      font-size: 20px;
+    }
+
+/*BOX-------------------------------------------*/
+    .box{
+      display: block;
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      width: 400px;
+    }
+
+    .box-name{
+      position: absolute;
+      z-index: 2;
+      left: 10px;
+      top: 10px;
+      font-size: 14px;
+      color: #fff;
+      background: #131ca0;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      padding: 5px 10px;
+    }
+
+    .box-cover{
+      font-size: 0;
+      line-height: 1em;
+    }
+
+    .box-cover img{
+      width: 100%;
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transition: all 300ms ease-in-out;
+      -webkit-transition: all 300ms ease-in-out;
+    }
+
+    .box-detalhes{
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      padding: 15px;
+      color: #fff;
+      font-size: 15px;
+    }
+
+    .box-detalhes:before{
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: -20px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: .9;
+      visibility: hidden;
+      background: linear-gradient(to bottom,transparent,#000);
+      transition: all 250ms ease-in-out;
+      -webkit-transition: all 250ms ease-in-out;
+      transform: translate(0,50%);
+      -webkit-transform: translate(0,50%);
+    }
+
+    .box-detalhes-info{
+      position: relative;
+      z-index: 2;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 250ms ease-in-out;
+      -webkit-transition: all 250ms ease-in-out;
+      transform: translate(0,50%);
+      -webkit-transform: translate(0,50%);
+    }
+
+    .box-detalhes-info h1{
+      font-size: 20px;
+    }
+
+/*box hover*/
+    .box:hover .box-cover img{
+      transform: scale(1);
+      -webkit-transform: scale(1);
+    }
+
+
+    .box:hover .box-detalhes{
+      transform: translate(0,0);
+      -webkit-transform: translate(0,0);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .box:hover .box-detalhes:before,
+    .box:hover .box-detalhes-info{
+      transform: translate(0,0);
+      -webkit-transform: translate(0,0);
+      opacity: 1;
+      visibility: visible;
+    }
+
+/*BREAKPOINTS MAXIMOS-------------------------------------------*/
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  /*menu*/
+    .navtoggle{
+      color: rgb(18, 35, 184);
+      font-size: 22px;
+      margin: 20px 5px 10px 0px;
+      }
+      .navtoggle:hover{
+        color: #0f1670;
+        transform: scale(1.1);
+      }
+
+    .navclose{
+      font-size: 22px;
+      color: rgb(18, 35, 184);
+    }
+    .navclose:hover {color: #0f1670;}
+
+    .lista{
+      list-style: none;
+    }
+
+    .header .nav.active{
+      right: 0;
+    }
+
+    .header .nav{
+      background: #fff;
+      position: fixed;
+      width: 250px;
+      height: 100%;
+      right: -100%;
+      top: 0;
+      z-index: 10;
+      padding: 15px;
+      transition: right .7s ease-in-out;
+    }
+
+    .header .nav ul li{
+      padding: 15px 5px;
+      font-size: 20px;
+      border-bottom: 1px solid #ccc;
+      position: relative;
+      color: rgb(18, 35, 184);
+    }
+    .header .nav ul li:hover{
+      font-weight: bold;
+      color: #0f1670;
+    }
+
+    .estatisticas{
+      flex-direction: column;
+    }
+
+    .estatisticas-item{
+      max-width: 90%;
+    }
+
+    .estatisticas-item:not(:last-of-type){
+      min-width: 90%;
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #ccc;
+    }
+    /*frase impacto*/
+    .frase {
+      padding: 150px;
+    }
+
+    .frase h1{
+      margin: 15px;
+      font-size: auto;
+    }
+  }
+
+/*destinos-------------------------------------------*/
+  .destinos-col{
+    width: fit-content;
+    margin-right: 2%;
+    float: left;
+  }
+
+/*BREAKPOINTS MINIMOS-------------------------------------------*/
+  @media (min-width: 768px) {
+    /*menu*/
+    .navclose, .navtoggle{
+      display: none;
+    }
+
+    .header .nav {
+      float: right;
+      margin-top: 20px;
+    }
+
+    .header .nav ul li{
+      display: inline-block;
+      margin-left: 20px;
+    }
+
+    .header .nav ul li a{
+      font-size-adjust: inherit;
+      color: #0f1670;
+    }
+
+    .header .nav ul li a:hover{
+      background: rgb(18, 35, 184);
+      border-radius: 5px;
+      padding: 7px;
+      color: white;
+    }
+
+    .frase{
+        padding: 200px 0;
+    }
+
+    /*estatisticas*/
+    .estatisticas{
+      margin-top: -65px;
+     }
+
+  .estatisticas-item{
+    text-align: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    }
+
+    .estatisticas-item:not(:last-of-type){
+      border-right: 1px solid #ccc;
+    }
+  }
+
+
+  /* AUXILIARES --------------------------------- */
+ .text-center{text-align: center;}
+ .text-left{text-align: left}
+ .text-right{text-align: right;}
+
+ .fl-left{float: left;}
+ .fl-right{float: right;}
